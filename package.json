@@ -23,6 +23,8 @@
     "url": "https://github.com/MitchellTR/Scoreboard/issues"
   },
   "homepage": "https://github.com/MitchellTR/Scoreboard#readme",
-  "dependencies": {},
+  "dependencies": {
+    "express": "^4.15.2"
+  },
   "devDependencies": {}
 }
