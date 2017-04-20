@@ -4,8 +4,9 @@
   "description": "a multiplayer, multi-game scoreboard app",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node index.js",
+    "test": "mocha test",
+    "your-custom-script": "echo npm"
   },
   "repository": {
     "type": "git",
@@ -21,5 +22,7 @@
   "bugs": {
     "url": "https://github.com/MitchellTR/Scoreboard/issues"
   },
-  "homepage": "https://github.com/MitchellTR/Scoreboard#readme"
+  "homepage": "https://github.com/MitchellTR/Scoreboard#readme",
+  "dependencies": {},
+  "devDependencies": {}
 }
