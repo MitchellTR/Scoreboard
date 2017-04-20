@@ -1,0 +1,25 @@
+{
+  "name": "@mechatodzilla/scoreboard",
+  "version": "1.0.0",
+  "description": "a multiplayer, multi-game scoreboard app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MitchellTR/Scoreboard.git"
+  },
+  "keywords": [
+    "gaming",
+    "scoreboard",
+    "leaderboard"
+  ],
+  "author": "Todd Mitchell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MitchellTR/Scoreboard/issues"
+  },
+  "homepage": "https://github.com/MitchellTR/Scoreboard#readme"
+}
