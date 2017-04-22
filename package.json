@@ -24,7 +24,8 @@
   },
   "homepage": "https://github.com/MitchellTR/Scoreboard#readme",
   "dependencies": {
-    "express": "^4.15.2"
+    "express": "^4.15.2",
+    "pg": "^6.1.5"
   },
   "devDependencies": {}
 }
