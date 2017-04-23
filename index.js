@@ -4,8 +4,17 @@ const express = require('express')
 const app = express()
 const port = 3000
 const pg = require('pg')
-const conString = 'postgres://user:pass@localhost/Scoreboard'
+const conString = 'postgres://postgres:3nr1cpos@localhost/Scoreboard'
 const router = express.Router()
+var bodyParser = require('body-parser')
+
+app.use(bodyParser.urlencoded({extended:false}))
+app.use(bodyParser.json())
+/*app.use(function(req,res){
+  res.setHeader('Content-Type','text/plain')
+  res.write('you posted:\n')
+  res.end(JSON.stringify(req.body,))
+})*/
 /*app.post('/users',function(req,res,next){
   const user = req.body
 
@@ -59,6 +68,22 @@ router.route('/games')
         }
 
         res.json(result.rows)
+      })
+    })
+  })
+  .post(function(req,res,next){
+    pg.connect(conString,function(err,client,done){
+      if(err){
+        return next(err)
+      }
+      console.log(req)
+      client.query('SELECT add_game($1,$2);',[req.body.platformId,req.body.name],function(err,result){
+        done()
+        if(err){
+          return next(err)
+        }
+
+        res.sendStatus(200)
       })
     })
   });
