@@ -1,3 +1,4 @@
 run.bat
 backend/node_modules
 frontend/node_modules
+backend/npm-debug.log

@@ -3,6 +3,7 @@ CREATE OR REPLACE FUNCTION show_scores(ref refcursor) RETURNS refcursor AS $$
 BEGIN
 OPEN ref FOR 
 SELECT 
+	d.id AS id,
 	a.name AS Game, 
 	b.name AS Platform, 
 	c.name AS Mode, 

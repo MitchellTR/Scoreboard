@@ -1,5 +1,7 @@
-﻿CREATE VIEW scores_view AS
+﻿DROP VIEW scores_view;
+CREATE OR REPLACE VIEW scores_view AS
 SELECT 
+	d.id AS id,
 	a.name AS Game, 
 	b.name AS Platform, 
 	c.name AS Mode, 
